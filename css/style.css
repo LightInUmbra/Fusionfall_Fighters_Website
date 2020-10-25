@@ -1,0 +1,292 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    
+    --ff-primary: FusionfallFont;
+    --ff-secondary: FusionfallText;
+
+    --clr-headline-text: #3acf1c;
+    --clr-bg: #000000;
+    --clr-reg-text: #ffffff;
+    --clr-reg-text-two: #1fb3e0;
+}
+
+@font-face{
+    font-family: FusionfallFont;
+    src: url(fonts/JEFFE___.TTF);
+}
+
+@font-face{
+    font-family: FusionfallText;
+    src: url(fonts/conthrax-sb.ttf);
+}
+
+@font-face{
+    font-family: FusionfallText2;
+    src: url(fonts/nasalization-rg.ttf);
+}
+
+@font-face{
+    font-family: FusionfallText3;
+    src: url(fonts/neuropol.ttf);
+}
+
+.bg{
+    background-color: black;
+    background-image: url(../img/FFF_BG_3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-height: 6rem;
+    text-decoration: none;
+}
+
+.fuse{
+    content: url(/img/planet_fuse.png);
+    max-width: 5%;
+    margin-top: 1.5%;
+    display: none;
+    cursor: pointer;
+}
+
+.logo{
+    content: url(/img/FF_fighters_RPG_logo_v2_full.png);
+    overflow: hidden;
+    width: 10rem;
+    height: 5rem;
+    margin-top: .5rem;
+    z-index: 5;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 55%;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    color: #3acf1c;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 11px;
+    font-family: FusionfallFont;
+    margin-left: 3rem;
+}
+
+/* Index Page */
+
+.video{
+    display: flexbox;
+    margin-top: 5rem;
+}
+
+/* About Section */
+
+.bg-one {
+    background-color: #000000;
+    background-image: url(../img/fighters_header4.png);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.title-about {
+    font-family: FusionfallFont;
+    color: #3acf1c;
+    text-align: center;
+    width: 100%;
+    top: 12em;
+}
+
+.description-about {
+    font-family: FusionfallText3;
+    color: #1fb3e0;
+    text-align: start;
+    text-indent: 4em;
+    max-width: 60%;
+    max-height: 40%;
+}
+
+.description-about-sub {
+    font-family: FusionfallText;
+    color: #2fe01f;
+    text-align: start;
+    text-indent: 6em;
+    max-width: 60%;
+    max-height: 40%;
+}
+
+.text-decor{
+    font-family: FusionfallText;
+    color: #1fb3e0;
+    text-align: start;
+    max-width: 60%;
+    max-height: 40%;
+    text-decoration: none;
+}
+
+.mini-title {
+    font-family: FusionfallText;
+    color: #3acf1c;
+    font-size: small;
+    text-align: left;
+    width: 60%;
+    height: 40%;
+    top: 15em;
+    left: 2em;
+}
+
+/* Downloads Page */
+
+.bg-two {
+    background-color: #000000;
+    background-image: url(../img/beta_splashpage_1.png);
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: top;
+    z-index: 1;
+}
+
+.download-btn {
+    position: relative;
+    display: inline-block;
+    margin: 15.7rem;
+    margin-left: 30rem;
+    padding: 15px 30px;
+    color: #2196f3;
+    background-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-family: FusionfallFont;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+.download-btn:hover {
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 0.25s;
+
+}
+
+/* Credits Page */
+
+.bg-three {
+    background-color: #000000;
+    background-image: url(../img/fighters_header5.png);
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: top;
+}
+
+.description-about-2{
+    font-family: FusionfallText2;
+    color: #1fb3e0;
+    text-align: start;
+    text-indent: 4em;
+    max-width: 60%;
+    max-height: 40%;
+}
+
+.description-about-sub-1{
+    font-family: FusionfallText3;
+    color: #3acf1c;
+    text-align: start;
+    text-indent: 6em;
+    max-width: 60%;
+    max-height: 40%;
+}
+
+/* FAQ Page */
+
+.bg-four{
+    background-color: #000000;
+    background-image: url(../img/fighters_header6.png);
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: top;
+}
+
+.question {
+    font-family: FusionfallText2;
+    color: #1fb3e0;
+    text-align: left;
+    width: 80%;
+    height: 80%;
+    top: 14em;
+}
+
+.answer {
+    font-family: FusionfallText2;
+    color: #3acf1c;
+    text-align: start;
+    width: 76.5%;
+    height: 70%;
+    top: 16.5em;
+}
+
+.if-no-ans {
+    font-family: FusionfallText3;
+    color: #3acf1c;
+    position: relative;
+    text-align: center;
+    width: 50%;
+    height: 50%;
+    top: 14em;
+}
+
+
+/* Mobile */
+
+@media screen and (max-width:1024px){
+    .nav-links{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    
+    .nav-links{
+        position: absolute;
+          right: 0px;
+          height: 88vh;
+          top: 12vh;
+          width: 30%;
+          background-color: none;
+          flex-direction: column;
+          align-items: center;
+          transform: translateX(100%);
+          transition: transform 0.5s ease-in;
+    }
+
+    .fuse{
+        display: block;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
